@@ -1,0 +1,42 @@
+/* ========================================
+   夜雨寄北 · 自定义样式
+   全局背景已由主题 background 配置渲染到 #web_bg
+   ======================================== */
+
+/* 卡片半透明：让夜雨背景透出来 */
+:root {
+  --card-bg: rgba(255, 255, 255, 0.88);
+}
+
+[data-theme='dark'] {
+  --card-bg: rgba(24, 27, 33, 0.82);
+}
+
+/* 首页头图上的站点信息文字加投影，压得住亮色背景 */
+#site-info {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+/* 页脚融入背景 */
+#footer {
+  background: transparent;
+}
+
+#footer::before {
+  background: transparent;
+}
+
+/* 滚动条细化 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(144, 147, 153, 0.45);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(144, 147, 153, 0.7);
+}
